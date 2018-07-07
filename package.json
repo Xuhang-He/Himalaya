@@ -1,0 +1,36 @@
+{
+  "name": "yeti",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "aws-amplify": "^0.4.8",
+    "aws-amplify-react": "^0.1.54",
+    "axios": "^0.18.0",
+    "bootstrap": "^3.3.7",
+    "classnames": "^2.2.6",
+    "cookies-js": "^1.2.3",
+    "moment": "^2.22.2",
+    "qrcode.react": "^0.8.0",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
+    "redux-persist-cookie-storage": "^1.0.0",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy-dev": "npm run build & aws s3 cp build s3://dev-xuhanghe.himalaya.yetisnowticket.com --recursive --acl public-read",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
